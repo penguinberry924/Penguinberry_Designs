@@ -1,12 +1,11 @@
 body{
     margin:0;
     padding:0;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: consolas;
     line-height: 1.5em;
 }
 
 #site_wrap{
-    background-image: url('Image\ Assets/web banner.jpg');
     background-color:white;
     background-size: cover;
     min-height:100vh;
@@ -123,23 +122,24 @@ body{
 
 .featured_main{
     text-align: center;
-    background-color:rgba(113, 163, 244, 0.5);
     grid-area:featured_main;
     font-weight:bold;
     margin-top: 4px;
+    margin-bottom: 20px;
+
 }
 .featured_main h1{
-    color: white;
+    color: #71A3F4;
 }
 .featured_main p{
-    color: white
+    color: #71A3F4;
 }
 .content{
-    background-color:rgba(121, 255, 96, 0.5);
     grid-area:content;
-    color: white;
+    color: rgba(121, 255, 96, 1);
     text-align: center;
     margin: 10px 10px;
+    margin-bottom: 50px;
     font-weight:bold;
 }
 .footer{
