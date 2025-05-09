@@ -45,7 +45,8 @@ body{
     grid-area:featured_header;
     display:flex;
     justify-content: center;
-    margin-bottom: 4px;
+    margin-top: 50px;
+    margin-bottom: 20px;
 }
 
 .header{
@@ -124,8 +125,8 @@ body{
     text-align: center;
     grid-area:featured_main;
     font-weight:bold;
-    margin-top: 4px;
-    margin-bottom: 200px;
+    margin-top: 50px;
+    margin-bottom: 100px;
 
 }
 .featured_main h1{
@@ -133,6 +134,7 @@ body{
 }
 .featured_main p{
     color: #71A3F4;
+    margin-bottom: 50px;
 }
 .content{
     grid-area:content;
