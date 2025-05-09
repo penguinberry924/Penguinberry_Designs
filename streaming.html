@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penguinberry Streaming</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+    <div id="site_wrap">
+        <div class="featured_header">
+        <a href="index.html"><img src="Image Assets/Logo.png" alt="logo"/></a>
+        </div>
+        <div class="header">
+            <ul class="nav">
+                <li class="STREAMING" id="active1"><a href="streaming.html">STREAMING</a></li>
+                <li class="MERCH_STORE"><a href="merch_store.html">MERCH STORE</a></li>
+                <li class="ART_GALLERY"><a href="art_gallery.html">ART GALLERY</a></li>
+                <li class="COMMISSIONS"><a href="commissions.html">COMMISSIONS</a></li>
+                <li class="CONTACT"><a href="contact_me.html">CONTACT</a></li>
+                <li class="ABOUT_PENGUINBERRY"><a href="about_penguinberry.html">ABOUT PENGUINBERRY</a></li>
+            </ul>
+        </div>
+        <div class="streaming">
+            <h1>WATCH ME LIVE ON TWITCH.TV</h1>
+        <div id="twitch-embed"></div>
+        <script src="https://player.twitch.tv/js/embed/v1.js"></script>
+        <script type="text/javascript">
+            var options = {
+                width: "620",
+                height: "480",
+            };
+        new Twitch.Player("twitch-embed", {
+        channel: "penguinberry_"
+        });
+        </script>
+        <h2>Streaming Schedule</h2>
+            <ul class="streaming_schedule">
+                <li>Monday: TBD</li>
+                <li>Tuesday: TBD</li>
+                <li>Wednesday: TBD</li>
+                <li>Thursday: TBD</li>
+                <li>Friday: TBD</li>
+                <li>Saturday: TBD</li>
+                <li>Sunday: TBD</li>
+            </ul>
+        <h1>Check Out My Recorded Videos Here:</h1>
+        (Eventually)
+        <br/>
+        <a href="https://www.twitch.tv/penguinberry_/videos" target="blank"><img src="Image Assets/twitch-6860918_640.webp" alt="twitch logo" width="100px"/></a>
+        <br />
+        <a href="https://www.youtube.com/channel/UCaJdfBGibBUDv-fwc2ZsTGg" target="blank"><img src="Image Assets/YouTube_full-color_icon_(2017).svg.png" alt="Youtube Logo" width="100px"/></a>
+        </div>
+        <div class="footer">
+            &copy; Copyright 2023, Penguinberry
+        </div>
+    </div>
+</body>
+</html>

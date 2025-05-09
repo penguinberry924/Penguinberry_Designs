@@ -1,0 +1,303 @@
+body{
+    margin:0;
+    padding:0;
+    font-family:Arial, Helvetica, sans-serif;
+    line-height: 1.5em;
+}
+
+#site_wrap{
+    background-image: url('Image\ Assets/web banner.jpg');
+    background-color:white;
+    background-size: cover;
+    min-height:100vh;
+    display:grid;
+    grid-template-columns: 
+        1fr 
+        repeat(4,minmax(0,272px)) 
+        1fr 
+    ;
+    grid-gap:0px;
+    grid-template-rows:
+        min-content
+        43px
+        min-content
+        min-content
+        min-content
+        min-content
+        min-content
+        min-content
+        min-content
+        1fr
+    ;
+    grid-template-areas:
+        ". featured_header featured_header featured_header featured_header ."
+        ". header header header header ."
+        ". featured_main featured_main featured_main featured_main ."
+        ". content content content content ."
+        ". streaming streaming streaming streaming ."
+        ". merch merch merch merch ."
+        "art art art art art art"
+        "commissions commissions commissions commissions commissions commissions"
+        ". contact contact contact contact ."
+        "footer footer footer footer footer footer"
+}
+
+.featured_header{
+    grid-area:featured_header;
+    display:flex;
+    justify-content: center;
+    margin-bottom: 4px;
+}
+
+.header{
+    grid-area:header;
+    display:flex;
+    align-items:center;
+    justify-content: space-around;
+}
+.header .nav{
+    list-style: none;
+    padding:0;
+    display:flex;
+}
+.header .nav a{
+    text-decoration:none;
+    color: black;
+    padding: 8px 20px;
+    margin: 0px 4px;
+    text-transform: uppercase;
+    font-weight:bold;
+    display:inline-block;
+}
+
+/*~~~~~~~~~~~~~~streamingandcommissionsmenueffects~~~~~~~~~~~~~~*/
+
+.STREAMING a, .COMMISSIONS a{
+    color: white !important; 
+    background-color:#FFCCE4 !important;
+}
+.STREAMING a:hover, .COMMISSIONS a:hover{
+    color: #FFCCE4 !important;
+    background-color: white !important;
+    border: 2px solid #FFCCE4 !important;
+}
+#active1 a{
+    color: #FFCCE4 !important;
+    background-color: white !important;
+    border: 2px solid #FFCCE4 !important;
+}
+
+/*~~~~~~~~~~~~~~merchstoreandcontactmenueffects~~~~~~~~~~~~~~*/
+
+.MERCH_STORE a, .CONTACT a{
+    color: white !important;
+    background-color:#79FF60 !important;
+}
+.MERCH_STORE a:hover, .CONTACT a:hover{
+    color: #79FF60 !important;
+    background-color:white !important;
+    border: 2px solid #79FF60;
+}
+#active2 a{
+    color: #79FF60 !important;
+    background-color:white !important;
+    border: 2px solid #79FF60;
+}
+
+/*~~~~~~~~~~~~~~artandaboutmenueffects~~~~~~~~~~~~~~*/
+
+.ART_GALLERY a, .ABOUT_PENGUINBERRY a{
+    color: white !important;
+    background-color:#71A3F4 !important;
+}
+.ART_GALLERY a:hover, .ABOUT_PENGUINBERRY a:hover{
+    color: #71A3F4 !important;
+    background-color:white !important;
+    border: 2px solid #71A3F4;
+}
+#active3 a{
+    color: #71A3F4 !important;
+    background-color:white !important;
+    border: 2px solid #71A3F4;
+}
+
+.featured_main{
+    text-align: center;
+    background-color:rgba(113, 163, 244, 0.5);
+    grid-area:featured_main;
+    font-weight:bold;
+    margin-top: 4px;
+}
+.featured_main h1{
+    color: white;
+}
+.featured_main p{
+    color: white
+}
+.content{
+    background-color:rgba(121, 255, 96, 0.5);
+    grid-area:content;
+    color: white;
+    text-align: center;
+    margin: 10px 10px;
+    font-weight:bold;
+}
+.footer{
+    text-align: center;
+    background-color: gray;
+    grid-area:footer;
+    padding-top: 2em;
+}
+
+/*~~~~~~~~~~~~~~streaming.html styles~~~~~~~~~~~~~~*/
+
+.streaming{
+    background-color:rgba(0, 0, 0, .5);
+    grid-area:streaming;
+    color:white;
+    text-align: center;
+    margin: 10px 10px;
+    font-weight:bold;
+}
+.streaming_schedule{
+    list-style: none;
+}
+/*~~~~~~~~~~~~~~merch_store.html styles~~~~~~~~~~~~~~*/
+
+.merch{
+    background-color:rgba(255, 255, 255, .5);
+    grid-area:merch;
+    color:black;
+    text-align: center;
+    margin: 10px 10px;
+    font-weight:bold;
+}
+.penguin{
+    width: 25%;
+}
+
+
+/*~~~~~~~~~~~~~~art_gallery.html styles~~~~~~~~~~~~~~*/
+
+.art{
+    background-color:white;
+    grid-area:art;
+    color:black;
+    text-align: center;
+    margin: 10px 10px;
+    font-weight:bold;
+}
+.crystal_love {
+    max-width: 30%;
+    height: auto;
+  }
+.turtle_love {
+    max-width: 30%;
+    height: auto;
+  }
+.ninetales {
+    max-width: 30%;
+    height: auto;
+  }
+.stay_weird {
+    max-width: 30%;
+    height: auto;
+  }
+.tree_forest {
+    max-width: 50%;
+    height: auto;
+  }
+.witch_girl {
+    max-width: 50%;
+    height: auto;
+  }
+
+  /*~~~~~~~~~~~~~~commissions.html styles~~~~~~~~~~~~~~*/
+
+.commissions{
+    background-color:white;
+    grid-area:commissions;
+    color:black;
+    text-align: center;
+    margin: 10px 10px;
+    font-weight:bold;
+}
+
+.commission_image{
+    max-width: 100%;
+}
+
+/*~~~~~~~~~~~~~~contact.html styles~~~~~~~~~~~~~~*/
+.contact{
+    background-color:rgba(0, 0, 0, 0.5);
+    grid-area:content;
+    color: white;
+    text-align: center;
+    margin: 10px 10px;
+    font-weight:bold;
+}
+.form-control{
+    box-shadow: none;
+    border-radius: 0;
+    border-style: none none none none;
+}
+.btn{
+    background: #79FF60;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    margin: 8px 8px;
+    padding: 8px 20px;
+
+}
+
+/*~~~~~~~~~~~~~~phone_styles~~~~~~~~~~~~~~*/
+
+@media screen and (max-width:480px){
+    #site_wrap{
+        grid-template-rows:
+        min-content
+        min-content
+        min-content
+        min-content
+        min-content
+        min-content
+        min-content
+        min-content
+        min-content
+        1fr
+    ;
+        grid-template-areas:
+            ". featured_header featured_header featured_header featured_header ."
+            "header header header header header header"
+            "featured_main featured_main featured_main featured_main featured_main featured_main "
+            "content content content content content content"
+            ". streaming streaming streaming streaming ."
+            ". merch merch merch merch ."
+            "art art art art art art"
+            "commissions commissions commissions commissions commissions commissions"
+            ". contact contact contact contact ."
+            "footer footer footer footer footer footer"
+    }
+    .header .nav{
+        list-style: none;
+        padding:0;
+        display:flex;
+        flex-direction:column;
+    }
+    .header .nav a{
+        margin: .5em;
+    }
+    .penguin{
+        width: 25%;
+    }
+    .intro_video{
+        max-width: 100%;
+        max-height: auto;
+    }
+    .commission_image{
+        width: 400px;
+    }
+
+}
