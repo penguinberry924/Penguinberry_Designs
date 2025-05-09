@@ -186,12 +186,13 @@ body{
     grid-area:art;
     color:black;
     text-align: center;
-    margin: 10px 10px;
+    margin: 20px 20px;
     font-weight:bold;
 }
 .crystal_love {
     max-width: 30%;
     height: auto;
+
   }
 .turtle_love {
     max-width: 30%;
@@ -208,10 +209,12 @@ body{
 .tree_forest {
     max-width: 50%;
     height: auto;
+    margin: 20px 20px;
   }
 .witch_girl {
     max-width: 50%;
     height: auto;
+    margin: 20px 20px;
   }
 
   /*~~~~~~~~~~~~~~commissions.html styles~~~~~~~~~~~~~~*/
