@@ -125,7 +125,7 @@ body{
     grid-area:featured_main;
     font-weight:bold;
     margin-top: 4px;
-    margin-bottom: 20px;
+    margin-bottom: 200px;
 
 }
 .featured_main h1{
@@ -139,7 +139,7 @@ body{
     color: rgba(121, 255, 96, 1);
     text-align: center;
     margin: 10px 10px;
-    margin-bottom: 50px;
+    margin-bottom: 200px;
     font-weight:bold;
 }
 .footer{
